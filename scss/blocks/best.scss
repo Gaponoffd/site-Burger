@@ -1,0 +1,43 @@
+
+.best{
+    background-image: url("../img/section-best/best-bgr.jpg");
+    position: relative;
+    top:0;
+}
+
+.best__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.title{
+    font-family: 'gagalin';
+    font-size: 72.06px;
+    color: #2f3234;
+}
+
+.best__list{
+    display: flex;
+    width: 960px;
+    padding: 0 20px;
+}
+
+.best__elem{
+    width: 33.33%
+}
+
+.best__title{
+    font-family: lifehack;
+    font-size: 24.12px;
+    color: #2f3234;
+}
+
+.best__text{
+    font-weight: 300;
+    font-size: 14px;
+    color: #2f3234;
+}
