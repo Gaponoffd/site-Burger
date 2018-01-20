@@ -1,0 +1,54 @@
+
+
+
+.title{
+    background-image: url("../../img/section-title/section-bgr.jpg");
+    position: relative;
+    top: 0;
+}
+
+.title__content{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.title__text{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.title__text-top{
+    font-family: gagalin;
+    font-size: 72px;
+    color: #f9b43b;
+    line-height: 1;
+}
+
+.title__text-bottom{
+    margin-bottom: 20px;
+    line-height: 1;
+    font-family: lifehack;
+    font-size: 65px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 440px;
+}
+
+.arrow-scroll{
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-scroll__link{
+    display: block;
+    padding: 10px;
+}
