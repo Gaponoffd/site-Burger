@@ -12,7 +12,7 @@
     margin: 0 auto;
     padding: 0 20px;
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -20,8 +20,8 @@
 }
 
 .first__text{
-    margin-top: 90px;
-    margin-left: 20px;
+    margin-top: 84px;
+    margin-left: 13px;
 }
 
 .first__text-top{
@@ -32,13 +32,15 @@
 }
 
 .first__text-bottom{
-    margin-bottom: 20px;
+    margin-top: 20px;
     line-height: 1;
     font-family: lifehack;
     font-size: 65px;
     color: #ffffff;
     font-weight: 500;
     width: 440px;
+    letter-spacing: 1px;
+    letter-spacing: -2px;
 }
 
 .arrow-scroll{
