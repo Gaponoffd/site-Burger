@@ -11,7 +11,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
+    width: 960px;
 }
 
 .title{
@@ -22,6 +22,7 @@
 
 .best__list{
     display: flex;
+    justify-content: space-between;
     width: 960px;
     padding: 0 20px;
 }
