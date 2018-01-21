@@ -1,0 +1,32 @@
+
+.navigate{
+    position: fixed;
+    top:170px;
+    left: 95%;
+}
+
+.navigate__elem{
+    position: relative;
+    margin-bottom: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+
+    &_aktiv{
+        border: 1px solid #ffff;
+    }
+    
+}
+
+.navigate__link{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
