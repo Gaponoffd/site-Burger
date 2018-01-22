@@ -12,16 +12,9 @@
     height: 50%;
     overflow: hidden;
     filter: grayscale(100%);
-    // background-image: url('../img/reviews/photo11.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    @each $rv-foto in (11, 22, 33, 44, 55, 66, 77, 88) {
-        &_foto#{$rv-foto} {
-        background-image: url('../img/reviews/photo#{$rv-foto}.jpg');
-        }
-    }
 
     &:hover .reviews__content,{
         visibility: visible;

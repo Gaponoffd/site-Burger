@@ -232,22 +232,6 @@ ul, li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-  .reviews__elem_foto11 {
-    background-image: url("../img/reviews/photo11.jpg"); }
-  .reviews__elem_foto22 {
-    background-image: url("../img/reviews/photo22.jpg"); }
-  .reviews__elem_foto33 {
-    background-image: url("../img/reviews/photo33.jpg"); }
-  .reviews__elem_foto44 {
-    background-image: url("../img/reviews/photo44.jpg"); }
-  .reviews__elem_foto55 {
-    background-image: url("../img/reviews/photo55.jpg"); }
-  .reviews__elem_foto66 {
-    background-image: url("../img/reviews/photo66.jpg"); }
-  .reviews__elem_foto77 {
-    background-image: url("../img/reviews/photo77.jpg"); }
-  .reviews__elem_foto88 {
-    background-image: url("../img/reviews/photo88.jpg"); }
   .reviews__elem:hover .reviews__content {
     visibility: visible; }
   .reviews__elem:hover .reviews__block-dark {
