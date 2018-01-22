@@ -121,7 +121,7 @@ ul, li {
   margin: 0 auto;
   padding: 0 20px;
   position: absolute;
-  top: 44%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -156,7 +156,7 @@ ul, li {
 
 .arrow-scroll {
   position: absolute;
-  top: 600px;
+  bottom: 36px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -228,15 +228,30 @@ ul, li {
   height: 50%;
   overflow: hidden;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .reviews__elem_foto11 {
+    background-image: url("../img/reviews/photo11.jpg"); }
+  .reviews__elem_foto22 {
+    background-image: url("../img/reviews/photo22.jpg"); }
+  .reviews__elem_foto33 {
+    background-image: url("../img/reviews/photo33.jpg"); }
+  .reviews__elem_foto44 {
+    background-image: url("../img/reviews/photo44.jpg"); }
+  .reviews__elem_foto55 {
+    background-image: url("../img/reviews/photo55.jpg"); }
+  .reviews__elem_foto66 {
+    background-image: url("../img/reviews/photo66.jpg"); }
+  .reviews__elem_foto77 {
+    background-image: url("../img/reviews/photo77.jpg"); }
+  .reviews__elem_foto88 {
+    background-image: url("../img/reviews/photo88.jpg"); }
   .reviews__elem:hover .reviews__content {
-    opacity: 1; }
+    visibility: visible; }
   .reviews__elem:hover .reviews__block-dark {
     opacity: 1; }
-
-.reviews__img {
-  width: 100%;
-  height: 100%; }
 
 .reviews__content {
   position: absolute;
@@ -247,10 +262,7 @@ ul, li {
   transform: translate(-50%, -50%);
   width: 243px;
   z-index: 200;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
+  visibility: hidden; }
 
 .reviews__name {
   font-family: 'gagalin';
@@ -289,12 +301,12 @@ ul, li {
 
 .navigate {
   position: fixed;
-  top: 170px;
-  left: 95%; }
+  top: 92px;
+  left: 94%; }
 
 .navigate__elem {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 16px;
   height: 16px;
   border: 1px solid transparent;
@@ -310,6 +322,11 @@ ul, li {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: block;
+  padding: 7px; }
+  .navigate__link:hover .navigate__wrap {
+    background-color: #f8b03b; }
+
+.navigate__wrap {
   width: 6px;
   height: 6px;
   background-color: #ffff;
