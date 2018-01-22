@@ -1,0 +1,86 @@
+
+.team{
+    background-image: url('../img/section-team/team-bgr.jpg');
+    background-position: top center;
+    position: relative;
+}
+
+.team__block{
+    background-color: rgba(47, 50, 52, .93);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%
+}
+
+.team__content{
+    margin: 130px 0 0 95px;
+}
+
+.title_color{
+    color: #f9b43b;
+}
+
+.team__list{
+    margin-top: 58px;
+}
+
+.team__elem{
+    margin-bottom: 45px;
+
+    &_activ{
+        .team__name{
+          color: #f9b43b;  
+        }
+        .team__icon{
+            background-image: url('../img/section-team/arrow-up.png');
+        }
+        .description{
+            height: 100%;
+        }
+    }
+}
+
+.team__icon{
+    background-image: url('../img/section-team/arrow-down.png');
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 7px;
+    display: inline-block;
+}
+
+.team__name{
+    font-family: 'gagalin';
+    font-size: 14px;
+    color:#ffff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.description{
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.description__foto{
+    background-image: url('../img/section-team/team-foto.jpg');
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.description__text{
+    width: 210px;
+    font-size: 14px;
+    color: #ffff;
+    margin-left: 20px;
+
+    p{
+        margin-top: 0;
+    }
+}
