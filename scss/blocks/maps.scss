@@ -1,0 +1,38 @@
+
+.maps{
+    background-image: url('../img/maps.jpg');
+    position: relative;
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0f0f0f;
+}
+
+.footer__container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+}
+
+.contact{
+    width: 50%;
+    text-align: left;
+    padding: 10px 0
+}
+
+.contact__adres{
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff; 
+}
+
+.contact__tel{
+    font-weight: 700;
+    font-size: 14px;
+    color: #e45028; 
+}
