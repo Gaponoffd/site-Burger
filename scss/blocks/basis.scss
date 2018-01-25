@@ -46,8 +46,12 @@ ul,li{
     padding: 0;
 }
 
+.wrapper{
+    overflow: hidden;
+}
+
 .section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     min-height: 650px;
     background-size: cover;

@@ -35,8 +35,11 @@ ul, li {
   margin: 0;
   padding: 0; }
 
+.wrapper {
+  overflow: hidden; }
+
 .section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   min-height: 650px;
   background-size: cover;
@@ -468,6 +471,17 @@ ul, li {
   font-weight: 700;
   font-size: 14px;
   color: #e45028; }
+
+.sosial__link {
+  display: inline-block; }
+
+.icon {
+  fill: red;
+  width: 10px;
+  height: 10px; }
+  .icon use {
+    width: 10px;
+    height: 10px; }
 
 .order {
   background-image: url("../img/section-order/order-bgr.jpg"); }

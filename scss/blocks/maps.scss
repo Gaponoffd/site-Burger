@@ -36,3 +36,18 @@
     font-size: 14px;
     color: #e45028; 
 }
+
+.sosial__link{
+    display: inline-block;
+}
+
+.icon{
+    fill: red;
+    width: 10px;
+    height: 10px;
+
+    use{
+        width: 10px;
+        height: 10px;
+    }
+}
