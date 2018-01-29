@@ -31,23 +31,42 @@
     color: #ffffff; 
 }
 
+.icon__phone{
+    display: inline-block;
+    fill: #e45028;
+    width: 10px;
+    height: 10px;
+}
+
 .contact__tel{
+    display: inline-block;
     font-weight: 700;
     font-size: 14px;
-    color: #e45028; 
+    color: #e45028;
+}
+
+.social{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social__list{
+    display: flex;
 }
 
 .sosial__link{
-    display: inline-block;
+    padding: 10px 0 10px 20px;
 }
 
 .icon{
-    fill: red;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
 
     use{
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
     }
 }

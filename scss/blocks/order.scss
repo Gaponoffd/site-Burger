@@ -1,8 +1,140 @@
 
 .order{
-    background-image: url('../img/section-order/order-bgr.jpg')
+    background-image: url('../img/section-order/order-bgr.jpg');
+    position: relative;
 }
 
-// .form__comment-textarea{
-//     resize: both
-// }
+.order__content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.title_order{
+    margin-bottom: 55px;
+    color: #f9b43b;
+    text-align: center;
+}
+
+.form__content{
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.form__content-left, .form__content-right{
+    width: 50%;
+}
+
+.form__wrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form__contact-lable{
+    display: block;
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.form__title{
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form__contact-input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form__content-right{
+    margin-left: 20px;
+}
+
+.form__comment-textarea{
+    width: 100%;
+    height: 108px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.form__pay{
+    margin-top: 8px;
+}
+
+.form__radio-label{
+    margin-right: 13px;
+}
+
+.form__radio-input{
+    vertical-align: middle;
+}
+
+.radio__title{
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.form__call{
+    margin-top: 20px;
+}
+
+.form__call-input{
+    vertical-align: middle;
+}
+
+.call__title{
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.form__btns{
+    margin-top: 13px;
+}
+
+.form__btns-submit{
+    padding: 13px 16px;
+    border-radius: 5px;
+    background-color: #e45028;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.form__btns-reset{
+    padding: 13px 18px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+}

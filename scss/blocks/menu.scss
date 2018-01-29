@@ -7,15 +7,16 @@
 .title_menu{
     color: #ffff;
     position: absolute;
-    top: 110px;
-    left: 95px;
+    top: 100px;
+    line-height: 1;
+    left: 42px;
 }
 
 .menu__accordion{
     position: absolute;
-    width: 240px;
+    width: 780px;
     height: 100%;
-    right: 0;
+    right: 17px;
 }
 
 .menu__list{
@@ -25,6 +26,17 @@
 }
 
 .menu__elem{
+    display: flex;
+
+    &_activ{
+        .menu__info{
+            width: 540px;
+        }
+    }
+}
+
+.menu__link{
+    display: block;
     width: 80px;
     height: 100%;
     background-position: 80% 0;
@@ -46,10 +58,32 @@
     display: inline-block;
     // writing-mode:tb-rl;
     position: absolute;
-    top: 40%;
+    top: 41%;
     left: -353%;
     text-align: left;
     width: 650px;
 }
 
+.menu__info{
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background-color: rgba(47, 50, 52, 0.93);
+    position: relative;
+}
+
+.menu__info-text{
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    right: 30px;
+
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.714;
+    }
+}
+  
   
