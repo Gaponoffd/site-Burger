@@ -13,35 +13,46 @@
 }
 
 .footer__container{
-    width: 960px;
+    width: 100%;
+    max-width: rem(960px);
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 rem(10px);
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contact{
     width: 50%;
     text-align: left;
-    padding: 10px 0
+    padding: rem(10px) 0;
+
+    @include phones{
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .contact__adres{
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #ffffff; 
 }
 
 .icon__phone{
     display: inline-block;
     fill: #e45028;
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
 }
 
 .contact__tel{
     display: inline-block;
     font-weight: 700;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #e45028;
 }
 
@@ -50,23 +61,33 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include phones{
+        display: inline-block;
+    }
 }
 
 .social__list{
     display: flex;
+    justify-content: center;
+    margin-right: rem(15px);
+
+    @include phones{
+        margin-right: 0;
+    }
 }
 
 .sosial__link{
-    padding: 10px 0 10px 20px;
+    padding: rem(10px) 0 rem(10px) rem(20px);
 }
 
 .icon{
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #fff;
 
     use{
-        width: 20px;
-        height: 20px;
+        width: rem(20px);
+        height: rem(20px);
     }
 }

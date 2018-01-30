@@ -10,11 +10,27 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    left: 50%
+    left: 50%;
+
+    @include tablets{
+        left: 0; 
+        width: 100%;
+    }
 }
 
 .team__content{
-    margin: 100px 0 0 95px;
+    margin: rem(100px) 0 0 rem(95px);
+
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    @include phones {
+        margin-left: 0;
+    }
 }
 
 .title_color{
@@ -23,11 +39,11 @@
 }
 
 .team__list{
-    margin-top: 40px;
+    margin-top: rem(40px);
 }
 
 .team__elem{
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
 
     &_activ{
         .team__name{
@@ -40,22 +56,26 @@
             height: 100%;
         }
     }
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team__icon{
     background-image: url('../img/section-team/arrow-down.png');
     background-repeat: no-repeat;
-    width: 9px;
-    height: 7px;
+    width: rem(9px);
+    height: rem(7px);
     display: inline-block;
 }
 
 .team__name{
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     color:#ffff;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: rem(10px);
 }
 
 .description{
@@ -63,28 +83,46 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-top: 15px;
-    transition: height 0.3s
+    margin-top: rem(15px);
+    transition: height 0.3s;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .description__foto{
     background-image: url('../img/section-team/team-foto.jpg');
     background-position: center;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     overflow: hidden;
     border-radius: 50%;
-    margin-left: 22px;
+    margin-left: rem(22px);
+
+    @include tablets{
+        margin-left: 0;
+    }
 }
 
 .description__text{
-    width: 215px;
-    font-size: 14px;
+    width: rem(215px);
+    font-size: rem(14px);
     color: #ffff;
-    margin-left: 20px;
-    margin-top: -10px;
+    margin-left: rem(20px);
+    margin-top: rem(-10px);
+
+    @include tablets{
+        margin-left: 0;
+        width: rem(350px);
+    }
 
     p{
         margin-top: 0;
+
+        @include tablets {
+            margin-top: rem(25px);
+        }
     }
 }

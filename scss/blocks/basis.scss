@@ -21,7 +21,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-display: optional;
-    line-height: 1.42em;
+    line-height: 1.42rem;
 }
 
 *{
@@ -48,6 +48,12 @@ ul,li{
 
 .wrapper{
     overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container{
+    width: 100%;
 }
 
 .section{
@@ -57,4 +63,36 @@ ul,li{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+$tablets: 768px;
+$phones: 480px;
+
+@function rem($px){
+    @return $px/16px+0rem;
+}
+
+
+@mixin tablets {
+    @media screen and(max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and(max-width: $phones){
+        @content;
+    }
+}
+
+html {
+    @include tablets {
+        font-size: 15px;
+    }
+}
+
+html {
+    @include phones {
+        font-size: 14px;
+    }
 }

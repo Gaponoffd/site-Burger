@@ -16,6 +16,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
+
     &:hover .reviews__content,{
         visibility: visible;
     }
@@ -29,35 +34,63 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 243px;
+    width: 75%;
     z-index: 200;
     visibility: hidden;
+
+    @include phones{
+        text-align: center;
+    }
+
 }
 
 .reviews__name{
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        margin-bottom: rem(10px);
+        font-size: rem(13px);
+    }
+
+    @include phones{
+        font-size: rem(24px);
+    }
 }
 
 .reviews__text{
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
+
+    @include tablets {
+        font-size: rem(13px);
+        line-height: 1.4;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .reviews__link{
     font-weight: 500;
-    font-size: 13px;
+    font-size: rem(13px);
     color: #fff;
     text-transform: uppercase;
-    padding: 0 15px;
-    line-height: 37px;
+    padding: 0 rem(15px);
+    line-height: rem(37px);
     background: #2f3234;
     display: inline-block;
-    border-radius: 5px;
-    margin-top: 20px;
+    border-radius: rem(5px);
+    margin-top: rem(20px);
+
+    @include tablets {
+        margin-top: rem(10px);
+        font-size: rem(12px);
+    }
 }
 
 .reviews__block-dark{

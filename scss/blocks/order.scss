@@ -12,16 +12,27 @@
 }
 
 .title_order{
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
     color: #f9b43b;
     text-align: center;
+    line-height: 1;
+
+    @include phones {
+    width: 50%;
+    margin-left: 25%;
+    }
 }
 
 .form__content{
-    width: 960px;
-    padding: 0 10px;
+    width: rem(960px);
+    padding: 0 rem(10px);
     margin: 0 auto;
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__content-left, .form__content-right{
@@ -30,13 +41,13 @@
 
 .form__wrap{
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .form__contact-lable{
     display: block;
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child{
         margin-right: 0;
@@ -45,35 +56,47 @@
 
 .form__title{
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
+
+    @include phones{
+        text-align: left;
+    }
 }
 
 .form__contact-input{
     width: 100%;
-    height: 35px;
-    border-radius: 5px;
+    height: rem(35px);
+    border-radius: rem(5px);
     border: none;
 }
 
 .form__content-right{
-    margin-left: 20px;
+    margin-left: rem(20px);
+
+    @include tablets {
+        margin-left: 0;
+    }
+
+    @include phones {
+        text-align: center;
+    }
 }
 
 .form__comment-textarea{
     width: 100%;
-    height: 108px;
+    height: rem(108px);
     resize: none;
-    border-radius: 5px;
+    border-radius: rem(5px);
 }
 
 .form__pay{
-    margin-top: 8px;
+    margin-top: rem(8px);
 }
 
 .form__radio-label{
-    margin-right: 13px;
+    margin-right: rem(13px);
 }
 
 .form__radio-input{
@@ -82,14 +105,14 @@
 
 .radio__title{
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: rem(10px);
 }
 
 .form__call{
-    margin-top: 20px;
+    margin-top: rem(20px);
 }
 
 .form__call-input{
@@ -98,21 +121,21 @@
 
 .call__title{
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-left: rem(8px);
 }
 
 .form__btns{
-    margin-top: 13px;
+    margin-top: rem(13px);
 }
 
 .form__btns-submit{
-    padding: 13px 16px;
-    border-radius: 5px;
+    padding: rem(13px) rem(16px);
+    border-radius: rem(5px);
     background-color: #e45028;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     color: #fff;
     border: none;
@@ -125,10 +148,10 @@
 }
 
 .form__btns-reset{
-    padding: 13px 18px;
-    border-radius: 5px;
+    padding: rem(13px) rem(18px);
+    border-radius: rem(5px);
     background: rgba(0, 0, 0, 0);
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     color: #fff;
     border: none;
