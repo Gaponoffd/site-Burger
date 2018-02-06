@@ -67,6 +67,24 @@
                     </a>
                 </div>
 
+                <nav class="nav-mobile">
+                    <div class="nav-mobile__logo-wrap">
+                        <a href="" class="nav-mobile__logo-link">
+                            <img src="./img/logo.svg" alt="logo" class="logo">
+                        </a>
+                    </div>
+
+                    <a href="#" class="close__link">&#10006</a>
+
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">О НАС</a></li>
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">БУРГЕРЫ</a></li>
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">КОМАНДА</a></li>
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">МЕНЮ</a></li>
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">ОТЗЫВЫ</a></li>
+                        <li class="nav-mobile__elem"><a href="#" class="nav-mobile__link">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
             </section>
 
             <section class="section best">
@@ -547,5 +565,21 @@
             </a></li>
         </ul>
     </div>
+
+    <script>
+        var navMobBtnOpen = document.querySelector('.hmbrg-menu__link');
+        var navMobBtnClose = document.querySelector('.close__link');
+        var navMobBtn = document.querySelector('.nav-mobile');
+
+        navMobBtnOpen.addEventListener('click', function(e){
+            e.preventDefault();
+            navMobBtn.classList.add('nav-mobile_activ')
+        })
+
+        navMobBtnClose.addEventListener('click', function(e){
+            e.preventDefault();
+            navMobBtn.classList.remove('nav-mobile_activ')
+        })
+    </script>
 </body>
 </html>
