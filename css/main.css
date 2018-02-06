@@ -636,8 +636,11 @@ ul, li {
     line-height: 1.714; }
 
 .maps {
-  background-image: url("../img/maps.jpg");
   position: relative; }
+
+.map {
+  width: 100%;
+  height: 100%; }
 
 .footer {
   position: absolute;
