@@ -17,6 +17,10 @@
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column; 
+    }
 }
 
 .burgers__img{
@@ -40,6 +44,12 @@
     margin-left: rem(20px);
     width: 50%;
     height: 50%;
+
+    @include tablets{
+        margin-left: 0;
+        width: 74%;
+        text-align: center;
+    }
 }
 
 .title__burgers{
@@ -48,33 +58,37 @@
 }
 
 .burgers__wrap{
-    margin-top: 55px;
+    margin-top: rem(55px);
+
+    @include tablets{
+        margin-top: rem(30px)
+    }
 }
 
 .burgers__description{
     p{
         margin: 0;
-        font-size: 14px;
+        font-size: rem(14px);
         color: #fff; 
     }
 }
 
 .burgers__price{
-    margin-top: 40px;
+    margin-top: rem(40px);
 }
 
 .burgers__price-cash{
     font-family: 'gagalin';
-    font-size: 30px;
+    font-size: rem(30px);
     color: #e35028;
 
     b{
-        font-size: 72px;
+        font-size: rem(72px);
     }
 }
 
 .order-btns__link{
-    margin-left: 30px;
+    margin-left: rem(30px);
 }
 
 .burgers__composition{
@@ -82,7 +96,7 @@
     width: rem(90px);
     height: rem(90px);
     background-color: #f08c33;
-    border-radius: 5px;
+    border-radius: rem(5px);
     top: 14%;
     left: 5%;
 }
@@ -106,7 +120,7 @@
 
 .composition__content-text{
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }
 
@@ -115,6 +129,11 @@
     bottom: 14%;
     left: 5%;
     text-align: center;
+
+    @include tablets{
+        bottom: 74%;
+        left: 83%;
+    }
 }
 
 .calories__icon{
@@ -134,13 +153,13 @@
     left: 53%;
     transform: translate(-50%, -50%);
     font-family: 'gagalin';
-    font-size: 20px;
+    font-size: rem(20px);
     color: #fff;
 }
 
 .calories__text{
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }
 

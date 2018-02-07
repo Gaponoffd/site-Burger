@@ -298,7 +298,7 @@ ul, li {
 
 .close__link {
   position: absolute;
-  top: 2rem;
+  top: 1.75rem;
   right: 2.1875rem;
   display: block;
   color: #ffffff;
@@ -966,6 +966,12 @@ ul, li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .burgers__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .burgers__img {
   width: 50%;
@@ -985,38 +991,46 @@ ul, li {
   margin-left: 1.25rem;
   width: 50%;
   height: 50%; }
+  @media screen and (max-width: 768px) {
+    .burgers__text {
+      margin-left: 0;
+      width: 74%;
+      text-align: center; } }
 
 .title__burgers {
   line-height: 1;
   color: #fff; }
 
 .burgers__wrap {
-  margin-top: 55px; }
+  margin-top: 3.4375rem; }
+  @media screen and (max-width: 768px) {
+    .burgers__wrap {
+      margin-top: 1.875rem; } }
 
 .burgers__description p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff; }
 
 .burgers__price {
-  margin-top: 40px; }
+  margin-top: 2.5rem; }
 
 .burgers__price-cash {
   font-family: 'gagalin';
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #e35028; }
   .burgers__price-cash b {
-    font-size: 72px; }
+    font-size: 4.5rem; }
 
 .order-btns__link {
-  margin-left: 30px; }
+  margin-left: 1.875rem; }
 
 .burgers__composition {
   position: absolute;
   width: 5.625rem;
   height: 5.625rem;
   background-color: #f08c33;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   top: 14%;
   left: 5%; }
 
@@ -1038,7 +1052,7 @@ ul, li {
 
 .composition__content-text {
   font-family: 'gagalin';
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff; }
 
 .block__calories {
@@ -1046,6 +1060,10 @@ ul, li {
   bottom: 14%;
   left: 5%;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .block__calories {
+      bottom: 74%;
+      left: 83%; } }
 
 .calories__icon {
   position: relative; }
@@ -1064,12 +1082,12 @@ ul, li {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-family: 'gagalin';
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff; }
 
 .calories__text {
   font-family: 'gagalin';
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff; }
 
 .arrow-scroll_left {
