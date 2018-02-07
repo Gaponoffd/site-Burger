@@ -1025,14 +1025,23 @@ ul, li {
 .order-btns__link {
   margin-left: 1.875rem; }
 
-.burgers__composition {
+.wrap-composition {
   position: absolute;
+  top: 14%;
+  left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.burgers__composition {
+  position: relative;
   width: 5.625rem;
   height: 5.625rem;
   background-color: #f08c33;
   border-radius: 0.3125rem;
-  top: 14%;
-  left: 5%; }
+  cursor: pointer; }
+  .burgers__composition:hover + .composition-menu {
+    opacity: 1; }
 
 .composition__content {
   position: absolute;
@@ -1054,6 +1063,24 @@ ul, li {
   font-family: 'gagalin';
   font-size: 0.875rem;
   color: #fff; }
+
+.composition-menu {
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3125rem;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.composition-menu__row {
+  height: 1.125rem; }
+
+.composition-menu__column-icon {
+  width: 4.375rem; }
+
+.composition-menu__column-text {
+  width: 7.5rem; }
 
 .block__calories {
   position: absolute;
