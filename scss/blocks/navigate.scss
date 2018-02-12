@@ -12,11 +12,16 @@
     height: rem(16px);
     border: rem(1px) solid rgba(0, 0, 0, 0);
     border-radius: 50%;
-
-    &_aktiv{
-        border: rem(1px) solid #ffff;
-    }
     
+}
+
+.navigate__list .active{
+    position: relative;
+    margin-bottom: rem(5px);
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: rem(1px) solid #ffff;
 }
 
 .navigate__link{
@@ -31,6 +36,7 @@
         background-color: #f8b03b;
     }
 }
+
 
 .navigate__wrap{
     width: rem(6px);
