@@ -99,14 +99,20 @@
 .reviews-overlay{
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: rem(-9999px);
+    right: inherit;
     bottom: 0;
     background: rgba(47, 50, 52, .92);
     z-index: 2000;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+    &_activ{
+        left: 0;
+        right: 0;
+    }
 }
 
 .reviews-overlay__block{
@@ -114,6 +120,33 @@
     border-radius: rem(5px);
     width: rem(460px);
     position: relative;
+}
+
+.reviews-overlay__close{
+    display: block;
+    position: absolute;
+    right: rem(22px); 
+    top: rem(22px);
+    color: #ec8468;
+    text-transform: uppercase;
+    padding: rem(5px) rem(5px);
+}
+
+.reviews-overlay__content{
+    padding: rem(32px) rem(22px);
+}
+
+.reviews-overlay__content-name{
+    margin-bottom: rem(22px);
+    font-family: 'gagalin';
+    font-size: rem(14px);
+    color: #2f3234;
+}
+
+.reviews-overlay__content-text{
+    font-weight: 300;
+    font-size: rem(14px);
+    color: #2f3234;
     
 }
 

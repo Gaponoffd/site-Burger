@@ -467,8 +467,8 @@ ul, li {
 .reviews-overlay {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: -624.9375rem;
+  right: inherit;
   bottom: 0;
   background: rgba(47, 50, 52, 0.92);
   z-index: 2000;
@@ -481,12 +481,38 @@ ul, li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .reviews-overlay_activ {
+    left: 0;
+    right: 0; }
 
 .reviews-overlay__block {
   background-color: #fff;
   border-radius: 0.3125rem;
   width: 28.75rem;
   position: relative; }
+
+.reviews-overlay__close {
+  display: block;
+  position: absolute;
+  right: 1.375rem;
+  top: 1.375rem;
+  color: #ec8468;
+  text-transform: uppercase;
+  padding: 0.3125rem 0.3125rem; }
+
+.reviews-overlay__content {
+  padding: 2rem 1.375rem; }
+
+.reviews-overlay__content-name {
+  margin-bottom: 1.375rem;
+  font-family: 'gagalin';
+  font-size: 0.875rem;
+  color: #2f3234; }
+
+.reviews-overlay__content-text {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #2f3234; }
 
 .reviews__block-dark {
   position: absolute;

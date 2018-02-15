@@ -61,3 +61,22 @@ for (let l = 0; l < teamNameMenu.length; l++) {
         this.closest('.menu__elem').classList.toggle("menu__elem_activ");
     });
 };
+
+///Оверлей
+var reviewsOverlay = document.querySelector('.reviews-overlay');
+var reviewsOverlayClose = document.querySelector('.reviews-overlay__close');
+var reviewsLink = document.querySelectorAll('.reviews__link');
+
+
+for (k=0; k<reviewsLink.length; k++){
+    reviewsLink[k].addEventListener('click', function(e){
+        e.preventDefault()
+        reviewsOverlay.classList.add('reviews-overlay_activ')
+    })    
+  
+}
+
+reviewsOverlayClose.addEventListener('click', function(e){
+    e.preventDefault()
+    reviewsOverlay.classList.remove('reviews-overlay_activ')
+})    
