@@ -462,7 +462,7 @@
                                 Никогда не думал, что булочки могут быть такими мягкими, 
                                 котлетка такой сочной, а сыр таким расплавленным.
                             </div>
-                            <a href="#" class="reviews__link_a">подробнее</a>
+                            <a href="#" class="reviews__link">подробнее</a>
 
                            
                         </div>
@@ -566,41 +566,41 @@
             <section class="section order" data-anchor="section-order">
                 <div class="order__content">
                     <h1 class="title title_order">закажите доставку</h1>
-                    <form class="form" action="">
+                    <form class="form" action="server.php" method="post" id="form-order">
                         <div class="form__content">
                             <div class="form__content-left">
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Имя</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-name" name="user-name">
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Телефон</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-phone" name="user-phone">
                                     </label>    
                                 </div>
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Улица</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-street" name="user-street">
                                     </label>  
                                 </div>
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Дом</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-home" name="user-home">
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Корпус</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-building" name="user-building">
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Квартира</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-apartment" name="user-apartment">
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Этаж</div>
-                                        <input class="form__contact-input" type="text">
+                                        <input class="form__contact-input" type="text" id="user-floor" name="user-floor">
                                     </label>
                                 </div>
                             </div>
@@ -609,22 +609,22 @@
                                 
                                 <label class="form__comment-label">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__comment-textarea" name=""></textarea> 
+                                    <textarea class="form__comment-textarea" name="message" id="message"></textarea> 
                                 </label>
                                 
                                 <div class="form__pay">       
                                     <label class="form__radio-label" for="client-radio">
-                                        <input class="form__radio-input" type="radio" name="pay-radio" checked>
+                                        <input class="form__radio-input" type="radio" name="pay-radio" value="Наличными" checked >
                                         <span class="radio__title">Потребуется сдача</span> 
                                     </label>
                                     <label class="form__radio-label" for="client-radio">
-                                        <input class="form__radio-input" type="radio" name="pay-radio" checked>
+                                        <input class="form__radio-input" type="radio" name="pay-radio" value="Картой" checked>
                                         <span class="radio__title">Оплата по карте</span> 
                                     </label>
                                 </div>
                                 <div class="form__call">
                                     <label class="form__call-label">
-                                        <input class="form__call-input" type="checkbox">
+                                        <input class="form__call-input" type="checkbox" value="1" id="user-call" name="user-call">
                                         <span class="call__title">Не перезванивать</span> 
                                     </label>
                                 </div>
