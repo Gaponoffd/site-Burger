@@ -45,22 +45,39 @@
 .team__elem{
     margin-bottom: rem(14px);
 
-    // &_activ{
-    //     .team__name{
-    //       color: #f9b43b;  
-    //     }
-    //     .team__icon{
-    //         background-image: url('../img/section-team/arrow-up.png');
-    //     }
-    //     .description{
-    //         height: 100%;
-    //     }
-    // }
+    &_activ{
+       
+        .description{
+            height: 100%;
+        }
+
+        .team__name{
+          color: #f9b43b;
+        }
+        .team__icon{
+            background-image: url('../img/section-team/arrow-up.png');
+        }
+       
+    }
 
     @include tablets {
         text-align: center;
     }
 }
+
+// .team__link{
+//     &_activ{
+//         .team__name{
+//           color: #f9b43b;  
+//         }
+//         .team__icon{
+//             background-image: url('../img/section-team/arrow-up.png');
+//         }
+//         + .description{
+//             height: 100%; 
+//         }
+//     }
+// }
 
 .team__icon{
     background-image: url('../img/section-team/arrow-down.png');
@@ -69,9 +86,9 @@
     height: rem(7px);
     display: inline-block;
 
-    &_activ{
-        background-image: url('../img/section-team/arrow-up.png'); 
-    }
+    // &_activ{
+    //     background-image: url('../img/section-team/arrow-up.png'); 
+    // } 
 }
 
 .team__name{
@@ -81,9 +98,9 @@
     cursor: pointer;
     margin-left: rem(10px);
 
-    &_activ{
-        color: #f9b43b;
-    }
+    // &_activ{
+    //     color: #f9b43b;
+    // }
 }
 
 .description{
@@ -92,11 +109,10 @@
     display: flex;
     align-items: center;
     margin-top: rem(15px);
-    transition: height 0.3s;
 
-    &_activ{
-        height: 100%;
-    }
+    // &_activ{
+    //     height: 100%;
+    // }
 
     @include tablets {
         flex-direction: column;

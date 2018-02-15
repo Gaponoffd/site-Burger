@@ -16,7 +16,7 @@
     position: absolute;
     // width: rem(780px);
     height: 100%;
-    right: rem(17px);
+    right: 0;
 }
 
 .menu__list{
@@ -85,6 +85,10 @@
     top: rem(60px);
     left: rem(35px);
     right: rem(30px);
+
+    @include phones {
+        top: rem(20px);
+    }
 
     p{
         font-weight: 300;

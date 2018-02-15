@@ -1,3 +1,6 @@
+.reviews{
+    position: relative;
+}
 
 .reviews__list{
     display: flex;
@@ -91,6 +94,27 @@
         margin-top: rem(10px);
         font-size: rem(12px);
     }
+}
+
+.reviews-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 50, 52, .92);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-overlay__block{
+    background-color: #fff;
+    border-radius: rem(5px);
+    width: rem(460px);
+    position: relative;
+    
 }
 
 .reviews__block-dark{
