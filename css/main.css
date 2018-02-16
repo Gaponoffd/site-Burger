@@ -853,7 +853,12 @@ ul, li {
 .icon {
   width: 1.25rem;
   height: 1.25rem;
-  fill: #fff; }
+  fill: #5e5e5e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .icon:hover {
+    fill: #ffffff; }
   .icon use {
     width: 1.25rem;
     height: 1.25rem; }
@@ -951,8 +956,37 @@ ul, li {
 .form__radio-label {
   margin-right: 0.8125rem; }
 
-.form__radio-input {
+.radio__styles {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+  border-radius: 50%;
   vertical-align: middle; }
+  .radio__styles:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: #e35028;
+    border-radius: 50%;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+
+.form__radio-input {
+  vertical-align: middle;
+  position: absolute;
+  left: -624.9375rem; }
+  .form__radio-input:checked + .radio__styles:after {
+    width: 0.5rem;
+    height: 0.5rem; }
 
 .radio__title {
   font-weight: 300;
@@ -964,8 +998,30 @@ ul, li {
 .form__call {
   margin-top: 1.25rem; }
 
-.form__call-input {
+.call__styles {
+  position: relative;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: #fff;
+  display: inline-block;
   vertical-align: middle; }
+  .call__styles:after {
+    content: "\2714";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #e35028;
+    opacity: 0; }
+
+.form__call-input {
+  vertical-align: middle;
+  position: absolute;
+  left: -624.9375rem; }
+  .form__call-input:checked + .call__styles:after {
+    opacity: 1; }
 
 .call__title {
   font-weight: 300;
@@ -1001,6 +1057,12 @@ ul, li {
   cursor: pointer; }
   .form__btns-reset:focus {
     outline: none; }
+
+.success {
+  color: green; }
+
+.error {
+  color: red; }
 
 .burgers {
   position: relative;

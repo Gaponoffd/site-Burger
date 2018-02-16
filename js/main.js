@@ -79,4 +79,50 @@ for (k=0; k<reviewsLink.length; k++){
 reviewsOverlayClose.addEventListener('click', function(e){
     e.preventDefault()
     reviewsOverlay.classList.remove('reviews-overlay_activ')
-})    
+})
+
+
+///Ajax форма
+
+$('#form-order').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+    console.log('in submitForm')
+
+
+    var form = $(ev.target),
+    data = form.serialize(),
+    url = form.attr('action'),
+    type = form.attr('method');
+
+        console.log(form);
+        console.log(data);
+        console.log(url);
+        console.log(type);
+
+        var request = $.ajax({
+            type: type,
+            url: url,
+            dataType : 'JSON',
+            data: data
+        })
+
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    })
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+
+    // request.done(function(msg) {
+    //     alert(msg);
+    // })
+}

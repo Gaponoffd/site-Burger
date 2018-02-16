@@ -572,35 +572,35 @@
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Имя</div>
-                                        <input class="form__contact-input" type="text" id="user-name" name="user-name">
+                                        <input class="form__contact-input" type="text" id="user-name" name="user-name" required>
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Телефон</div>
-                                        <input class="form__contact-input" type="text" id="user-phone" name="user-phone">
+                                        <input class="form__contact-input" type="text" id="user-phone" name="user-phone" required>
                                     </label>    
                                 </div>
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Улица</div>
-                                        <input class="form__contact-input" type="text" id="user-street" name="user-street">
+                                        <input class="form__contact-input" type="text" id="user-street" name="user-street" required>
                                     </label>  
                                 </div>
                                 <div class="form__wrap">
                                     <label class="form__contact-lable">
                                         <div class="form__title">Дом</div>
-                                        <input class="form__contact-input" type="text" id="user-home" name="user-home">
+                                        <input class="form__contact-input" type="text" id="user-home" name="user-home" required>
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Корпус</div>
-                                        <input class="form__contact-input" type="text" id="user-building" name="user-building">
+                                        <input class="form__contact-input" type="text" id="user-building" name="user-building" required>
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Квартира</div>
-                                        <input class="form__contact-input" type="text" id="user-apartment" name="user-apartment">
+                                        <input class="form__contact-input" type="text" id="user-apartment" name="user-apartment" required>
                                     </label>
                                     <label class="form__contact-lable">
                                         <div class="form__title">Этаж</div>
-                                        <input class="form__contact-input" type="text" id="user-floor" name="user-floor">
+                                        <input class="form__contact-input" type="text" id="user-floor" name="user-floor" required>
                                     </label>
                                 </div>
                             </div>
@@ -613,18 +613,21 @@
                                 </label>
                                 
                                 <div class="form__pay">       
-                                    <label class="form__radio-label" for="client-radio">
-                                        <input class="form__radio-input" type="radio" name="pay-radio" value="Наличными" checked >
+                                    <label class="form__radio-label">
+                                        <input class="form__radio-input" type="radio" name="pay-radio" value="Наличными" >
+                                        <span class="radio__styles"></span>
                                         <span class="radio__title">Потребуется сдача</span> 
                                     </label>
-                                    <label class="form__radio-label" for="client-radio">
+                                    <label class="form__radio-label">
                                         <input class="form__radio-input" type="radio" name="pay-radio" value="Картой" checked>
+                                        <span class="radio__styles"></span>
                                         <span class="radio__title">Оплата по карте</span> 
                                     </label>
                                 </div>
                                 <div class="form__call">
                                     <label class="form__call-label">
-                                        <input class="form__call-input" type="checkbox" value="1" id="user-call" name="user-call">
+                                        <input class="form__call-input" type="checkbox" value="1" id="user-call" name="user-call" checked>
+                                        <span class="call__styles"></span>
                                         <span class="call__title">Не перезванивать</span> 
                                     </label>
                                 </div>

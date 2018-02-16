@@ -89,7 +89,12 @@
 .icon{
     width: rem(20px);
     height: rem(20px);
-    fill: #fff;
+    fill: #5e5e5e;
+    transition: 0.2s;
+
+    &:hover{
+        fill: #ffffff;
+    }
 
     use{
         width: rem(20px);
